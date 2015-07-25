@@ -12,6 +12,10 @@
  * 所有除开系统级别的前台配置
  */
 return array(
+	'THINK_PLUGIN_ON'      => true, 
+	'TMPL_ENGINE_TYPE' =>   'Smarty',
+
+
 
     // 预先加载的标签库
     'TAGLIB_PRE_LOAD'     =>    'OT\\TagLib\\Article,OT\\TagLib\\Think',

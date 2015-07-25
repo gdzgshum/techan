@@ -107,7 +107,7 @@ class View {
         if(empty($content)) {
             $templateFile   =   $this->parseTemplate($templateFile);
             // 模板文件不存在直接返回
-            if(!is_file($templateFile)) E(L('_TEMPLATE_NOT_EXIST_').':'.$templateFile);
+           // if(!is_file($templateFile)) E(L('_TEMPLATE_NOT_EXIST_').':'.$templateFile);
         }else{
             defined('THEME_PATH') or    define('THEME_PATH', $this->getThemePath());
         }

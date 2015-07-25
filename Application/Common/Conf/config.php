@@ -12,6 +12,7 @@
  * 所有系统级别的配置
  */
 return array(
+	'TMPL_ENGINE_TYPE' =>   'Smarty',
     /* 模块相关配置 */
     'AUTOLOAD_NAMESPACE' => array('Addons' => ONETHINK_ADDON_PATH), //扩展模块列表
     'DEFAULT_MODULE'     => 'Home',

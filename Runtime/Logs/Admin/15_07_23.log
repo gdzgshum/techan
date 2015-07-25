@@ -1,0 +1,6 @@
+[ 2015-07-23T10:21:13+08:00 ] 127.0.0.1 /admin.php?s=/public/login.html
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant dddddddddd - assumed 'dddddddddd' E:\workgithub\techan\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_template.php 第 167 行.
+NOTIC: [8] Use of undefined constant fffffffffffff - assumed 'fffffffffffff' E:\workgithub\techan\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_template.php 第 229 行.
+ERR: Syntax error in template "E:\workgithub\techan\Application\Admin\View\Public\login.html"  on line 15 "<form action="{:U('login')}" method="post" class="login-form">"  - Unexpected ":"
+

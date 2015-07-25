@@ -85,20 +85,19 @@ class App {
             $action  =  'run';
         }else{
             //创建控制器实例
-            $module  =  controller(CONTROLLER_NAME,CONTROLLER_PATH);                
-        }
-
+            $module  =  controller(CONTROLLER_NAME,CONTROLLER_PATH);          
+        } 
         if(!$module) {
             if('4e5e5d7364f443e28fbf0d3ae744a59a' == CONTROLLER_NAME) {
                 header("Content-type:image/png");
                 exit(base64_decode(App::logo()));
             }
-
+ 
             // 是否定义Empty控制器
             $module = A('Empty');
             if(!$module){
                 E(L('_CONTROLLER_NOT_EXIST_').':'.CONTROLLER_NAME);
-            }
+            } 
         }
 
         // 获取当前操作名 支持动态路由
@@ -159,8 +158,9 @@ class App {
                     }
                     array_walk_recursive($args,'think_filter');
                     $method->invokeArgs($module,$args);
-                }else{
+                }else{ 
                     $method->invoke($module);
+
                 }
                 // 后置操作
                 if($class->hasMethod('_after_'.$action)) {
